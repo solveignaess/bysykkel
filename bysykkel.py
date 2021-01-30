@@ -44,7 +44,7 @@ try:
     # display data
     table = pandas.DataFrame.from_dict(dict_to_show,
                                        orient='index',
-                                       columns=['# bikes', '# docks'])
+                                       columns=['number of bikes', 'number of docks'])
     print(table)
 
     # reset maximum number of rows
