@@ -1,4 +1,4 @@
-#Hvor kan jeg finne/ sette fra meg en bysykkel?
+# Hvor kan jeg finne/ sette fra meg en bysykkel?
 =================================================================================
 [Python](https://www.python.org/downloads/)-metode som skriver ut en tabell med
 oversikt over hvor mange ledige sykler og låser som finnes ved hver av Oslo Bysykkels stasjoner.
