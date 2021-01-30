@@ -1,10 +1,12 @@
-Sanntidsinformasjon om antall ledige sykler og låser ved Oslo Bysykkels stasjoner
+#Hvor kan jeg finne/ sette fra meg en bysykkel?
 =================================================================================
-[Python](https://www.python.org/downloads/) metode, `bysykkel.py`, henter sanntidsinformasjon fra
-Oslo bysykkels åpne API: [https://oslobysykkel.no/apne-data/sanntid](https://oslobysykkel.no/apne-data/sanntid)
+[Python](https://www.python.org/downloads/)-metode som skriver ut en tabell med
+oversikt over hvor mange ledige sykler og låser som finnes ved hver av Oslo Bysykkels stasjoner.
 
-Avhenger av to Python bibliotek [Requests](https://pypi.org/project/requests/)
- og [Pandas](https://pypi.org/project/pandas/).
+Informasjonen blir hentet fra Oslo bysykkels åpne API: [https://oslobysykkel.no/apne-data/sanntid](https://oslobysykkel.no/apne-data/sanntid)
+
+Avhenger av to Python-bibliotek: [Requests](https://pypi.org/project/requests/)
+ og [Pandas](https://pypi.org/project/pandas/), som kan installeres med pip fra terminalen
 
 ```
 $ pip install requests
