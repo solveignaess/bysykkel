@@ -15,22 +15,24 @@ try:
                           headers=my_headers)
     status.raise_for_status()
 
-    # make station information and status lists
+    # list of general information for each station
     information_list = information.json()['data']['stations']
+    # list of status information for each station
     status_list = status.json()['data']['stations']
 
     # make lookup dictionary {caller ID: station name}
     dict = {}
-    for elem in information_list:
-        id = elem['station_id']
-        dict[id] = elem['name']
+    for station_inf in information_list:
+        id = station_inf['station_id']
+        dict[id] = station_inf['name']
 
     # make dictionary to show {station name: [num bikes, num locks]}
     dict_to_show = {}
-    for elem in status_list:
-        jd = elem['station_id']
+    for station_stat in status_list:
+        jd = station_stat['station_id']
         if jd in dict.keys():
-            dict_to_show[dict[jd]] = [elem['num_bikes_available'], elem['num_docks_available']]
+            dict_to_show[dict[jd]] = [station_stat['num_bikes_available'],
+                                      station_stat['num_docks_available']]
 
     # sort dict alphabetically
     dict_to_show = {key:dict_to_show[key] for key in sorted(dict_to_show)}
