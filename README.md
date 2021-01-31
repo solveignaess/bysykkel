@@ -1,7 +1,7 @@
 # Hvor kan jeg finne/ sette fra meg en bysykkel?
 
-[Python](https://www.python.org/downloads/)-metode som skriver ut en tabell med
-oversikt over hvor mange ledige sykler og låser som finnes ved hver av Oslo Bysykkels stasjoner.
+[Python](https://www.python.org/downloads/)-metode som lager tabell med
+oversikt over antall ledige sykler og låser ved Oslo Bysykkels stasjoner.
 
 Informasjonen blir hentet fra Oslo Bysykkels API: [https://oslobysykkel.no/apne-data/sanntid](https://oslobysykkel.no/apne-data/sanntid)
 
@@ -14,7 +14,7 @@ $ pip install requests
 ```
 $ pip install pandas
 ```
-Kjøres fra terminal:
+Programmet kjøres fra terminal:
 
 ```
 $ python bysykkel.py
